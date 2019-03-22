@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="signin animated slideInDown">
+            <div class="row">
+            <div class="col-md-12">
+
+    <div class="alert alert-dismissable" style="display: none; position:relative;" id="alertMessages" role="alert"><p><i class="rz-tick"></i>  <span>Ajax Messages</span> <i class="rz-cross cstm pull-right" data-dismiss="alert" style="position:absolute; top:10px; right:10px;"></i></p></div>
+        <div class="clearfix"></div>
+</div></div>            <div class="inner-wrapper">
+                <div class="cneter-block rz-logo">
+                    <a href="//www.rozee.pk/">
+                        <!--<img src="https://s.rozee.pk/r/i/rz-logo.png" class="img-responsive cneter-block">-->
+                        <img src="img/logo.svg">
+                    </a>
+                </div>
+                    <style type="text/css">
+        .bootbox-confirm h5 {
+            clear: both;
+            text-align: justify;
+            line-height: 1.4;
+            color: #444;
+            font-size: 18px;
+        }
+        .bootbox-confirm .btn{
+            transition: ease-in-out .3s;
+            -webkit-transition: ease-in-out .3s;
+            -moz-transition: ease-in-out .3s;
+        }
+        .bootbox-confirm .btn-success,
+        .bootbox-confirm .btn-success:active{
+            background: #46b749;
+            border-color: #46b749;
+            color: #fff;
+            text-transform: uppercase;
+            border-radius: 0;
+            padding: 6px 20px 5px;
+            font-size: 14px;
+        }
+        .bootbox-confirm .btn-success:hover,
+        .bootbox-confirm .btn-success:focus{
+            background: #fff;
+            border-color: #46b749;
+            color: #46b749;
+        }
+        .bootbox-confirm .btn-danger,
+        .bootbox-confirm .btn-danger:active{
+            background: #b3241a;
+            border-color: #b3241a;
+            color: #fff;
+            text-transform: uppercase;
+            border-radius: 0;
+            padding: 6px 20px 5px;
+            font-size: 14px;
+        }
+        .bootbox-confirm .btn-danger:hover,
+        .bootbox-confirm .btn-danger:focus{
+            background: #fff;
+            border-color: #b3241a;
+            color: #b3241a;
+        }
+        .bootbox-confirm .btn-primary,
+        .bootbox-confirm .btn-primary:active{
+            background: #1565c0;
+            border-color: #1565c0;
+            color: #fff;
+            text-transform: uppercase;
+            border-radius: 0;
+            padding: 6px 20px 5px;
+            font-size: 14px;
+        }
+        .bootbox-confirm .btn-primary:hover,
+        .bootbox-confirm .btn-primary:focus{
+            background: #fff;
+            border-color: #1565c0;
+            color: #1565c0;
+        }
+        @media screen and (max-width:480px){
+            .bootbox-confirm .btn{
+                width: 100%;
+            }
+            .bootbox-confirm .btn-success{
+                margin: 5px 0 0 !important;
+            }        
+        }
+    </style>
+    <script>
+        var msg_duplicateLogin = "Duplicate Login Notice";
+        var msg_continuelogin_btn = "Continue and Logout Other User";
+        var msg_cancel_btn = "Cancel";
+        $('.rz-cross').click(function () {
+            $('div.alert').hide()
+        });
+    </script>
+    <form class="mt40" id="login-form" onsubmit="signIn()" method="post" novalidate="novalidate">
+
+        <div id="messageContainer">            </div>
+            <div class="clearfix"></div>
+            <div>
+                <div class="form-group text-left">
+                    <!--<img src="https://s.rozee.pk/r/i/spinner.gif" class="hide emlLoader" id="loginSpiner" style="">-->
+                    <input class="form-control s-18" tabindex="1" name="username_or_email" value="" id="email" type="text" autofocus="" placeholder="Email Address">
+                </div>
+                <div class="form-group text-left">
+                    <input type="password" class="form-control s-18" tabindex="2" name="password" id="pwd" placeholder="Password">
+                </div>
+                <div class="form-group text-left">
+                    <input type="hidden" class="form-control s-18" name="rzTkn" id="rzTkn" value="fcefd9b21877c62e4f0aaa3c6199f86a6070b7f3b9d127242f86d13672fca049">
+                    <input type="hidden" class="form-control s-18" name="token" id="token">
+                </div>
+                <div class="form-group text-left">
+                    <input type="hidden" class="form-control s-18" name="googleCaptcha" id="googleCaptcha" value="">
+                </div>
+                <div class="form-group" id="captchaContainer" style="position: relative; margin: 0px auto; max-width: 304px; margin-bottom: 20px;">
+                </div>
+                <div class="form-group">
+                    <input class="form-control btn btn-default s-18" tabindex="3" style="color:#fff !important" type="submit" value="Login">
+                    <div class="spinner-wrapper-gray loading" style="display: none; background: none;">
+                        <div class="spinner" style="width: 30px; height: 30px; border-radius: 50%;"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class=" mt25 clearfix">
+                        <!--<a  href="//www.rozee.pk/home/linkedin" class="blue">Sign Up with LinkedIn profile</a>  &nbsp;&nbsp; <a  href="//www.rozee.pk/register">Sign Up</a>-->
+                        <div class="pull-left">Don't have an account?&nbsp; <a href="//www.rozee.pk/register">Sign Up</a></div>
+                        <div class="pull-right"><a href="https://www.rozee.pk/forgot-password">Forgot Password?</a></div>
+                    </div>
+                                            <div class="s-18 center-block mt20 dvdr"></div>
+                        <div class="btn tstroke s-18 text-center mt20" onclick="mconnectDiscover()"><span class="pull-left"><i class="rz-loginlock"></i></span>Mobile Connect Log-In</div>
+                                                            <div class="btn tstroke flogin s-18 text-center mt20" onclick="fbLogin()"><span class="pull-left"><i class="rz-facebook2 fb-color"></i></span>Login with Facebook</div>
+                                                        <div class="clearfix"></div>
+                        <div class="mt20 lchangr">
+                                                                                      
+                                            <a href="//www.rozee.pk/UR/login?chlng=y" class="lng nrs-14">اردو‎</a>
+ |                                                            
+                                            <a href="//www.rozee.pk/ZH/login?chlng=y" class="lng nrs-14">中文(简体)‎</a>
+                 </div>
+                        <!--<span class="help-block">Currently for Telenor users only</span>-->
+        </div>
+    </div>
+</form>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 1050857662;
+        var google_conversion_language = "en";
+        var google_conversion_format = "3";
+        var google_conversion_color = "ffffff";
+        var google_remarketing_only = false;
+        /*
+                                     
+         */
+        var google_conversion_label = "jIrSCPvW72YQvqGL9QM";
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+    <script src="//www.google.com/recaptcha/api.js?render=explicit" async="" defer=""></script>
+    <noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1050857662/?label=jIrSCPvW72YQvqGL9QM&amp;guid=ON&amp;script=0"/>
+    </div>
+    </noscript>
+            </div>
+        </div></body>
+</html>

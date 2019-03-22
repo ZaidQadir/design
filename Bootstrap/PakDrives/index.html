@@ -1,0 +1,817 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+-->
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Montserrat|Luckiest+Guy" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<script src="pak.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="row">
+<div class="col-sm-12">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+ <div class="container">
+  <a class="navbar-brand" href="index.html"><img src="images/logo2.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link text-white">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#sec-about" class="nav-link text-white">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a href="#sec-fleet" class="nav-link text-white">Our Fleet</a>
+						</li>
+						<li class="nav-item">
+							<a href="#sec-services" class="nav-link text-white">Services</a>
+						</li>
+						<li class="nav-item">
+							<a href="#sec-contact" class="nav-link text-white">Contact Us</a>
+						</li>
+					</ul>
+  </div>
+  </div>
+</nav>
+</div>
+</div>
+<!-- Image Slider -->
+
+
+
+<!-- Image Slider-2 -->
+<div  id="imgslider">
+<section class="mbr-fullscreen">
+<div class="mbr-overlay" style="background-color: rgb(0, 0, 0);">
+</div>
+<div class="container">
+<div class="row justify-content-md-center">
+
+<div class="mbr-white col-md-12">
+<h1 class="mbr-section-title align-left pb-3 display-1">WELCOME TO <span style="color:#006837;">PAK</span>DRIVES</h1>
+<p class="mbr-text align-left pb-3 display-5">Pakdrives rent a car for your next vacation or busniess trip. Excellent &amp; reasonable rates and a fleet of well-maintained, modern cars with professional chauffeurs/drivers.</p>
+<div class="mbr-section-btn align-left">
+<a class="btn btn-md btn-primary display-4" href="#" data-toggle="modal" data-target="#largeShoes">INSTANT BOOK NOW</a>
+<a class="btn btn-md btn-white-outline display-4" href="tel:03333028671">CALL NOW</a>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="largeShoes" tabindex="-1" role="dialog" aria-labelledby="modalLabelLarge" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+
+<button type="button" class="close animated fadeInUp" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+<div class="content">
+<div class="container">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb30 text-center">
+<h2 class="animated fadeInUp">Instant Car Reservation Form</h2>
+<span>Please Read Out Trems And Conditions Carefully Before Filling The Form</span>
+</div>
+</div>
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb30">
+<div class="tour-booking-form">
+<h4 class="tour-form-title animated fadeInUp">Your Personal Details</h4>
+<form method="post" action="routers/instant_quote" class="needs-validation" novalidate>
+ <div class="row">
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+<div class="form-group">
+<label class="control-label animated fadeInUp" for="validationServer01">Name</label>
+<input type="text" class="form-control animated fadeInUp" placeholder="Full Name" name="name" maxlength="30" required="">
+<div class="valid-feedback">
+<i class="fas fa-check"></i>
+</div>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+<div class="form-group">
+<label class="control-label animated fadeInUp" for="validationServer01">Phone Number</label>
+<div class="input-group animated fadeInUp">
+<input type="tel" pattern="^\d{11}$" placeholder="0300 0000000" class="form-control animated fadeInUp" name="num" required="">
+<div class="valid-feedback">
+<i class="fas fa-check"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+<div class="form-group">
+<label class="control-label animated fadeInUp" for="email">Email</label>
+<input type="email" id="email" class="form-control animated fadeInUp" placeholder="xxxx@xxxx.xxx" name="email" required="">
+<div class="valid-feedback">
+<i class="fas fa-check"></i>
+</div>
+</div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt30">
+<h4 class="tour-form-title animated fadeInUp">Your Booking Details</h4>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+<div class="form-group">
+<label class="control-label animated fadeInUp" for="validationServer01">Pick Up Date</label>
+<input id="name" type="date" name="pickUpdate" class="form-control animated fadeInUp" required="">
+<div class="valid-feedback">
+<i class="fas fa-check"></i>
+</div>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+<div class="form-group">
+<label class="control-label animated fadeInUp" for="validationServer01"> Pick Up Time</label>
+<select name="ptime" id="select" class="form-control" required>
+<option value="">Choose pickup time</option>
+<option value="Midnight">Midnight</option>
+<option value="00:30 AM">00:30 AM</option>
+<option value="01:00 AM">01:00 AM</option>
+<option value="01:30 AM">01:30 AM</option>
+ <option value="02:00 AM">02:00 AM</option>
+<option value="02:30 AM">02:30 AM</option>
+<option value="03:00 AM">03:00 AM</option>
+<option value="03:30 AM">03:30 AM</option>
+<option value="04:00 AM">04:00 AM</option>
+<option value="04:30 AM">04:30 AM</option>
+<option value="05:00 AM">05:00 AM</option>
+<option value="05:30 AM">05:30 AM</option>
+<option value="06:00 AM">06:00 AM</option>
+<option value="06:30 AM">06:30 AM</option>
+<option value="07:00 AM">07:00 AM</option>
+<option value="07:30 AM">07:30 AM</option>
+<option value="08:00 AM">08:00 AM</option>
+<option value="08:30 AM">08:30 AM</option>
+<option value="09:00 AM">09:00 AM</option>
+<option value="09:30 AM">09:30 AM</option>
+<option value="10:00 AM">10:00 AM</option>
+<option value="10:30 AM">10:30 AM</option>
+<option value="11:30 AM">11:30 AM</option>
+<option value="Noon">Noon</option>
+<option value="12:30 PM">12:30 PM</option>
+<option value="01:00 PM">01:00 PM</option>
+<option value="01:30 PM">01:30 PM</option>
+<option value="02:00 PM">02:00 PM</option>
+<option value="02:30 PM">02:30 PM</option>
+<option value="03:00 PM">03:00 PM</option>
+<option value="03:30 PM">03:30 PM</option>
+<option value="04:00 PM">04:00 PM</option>
+<option value="04:30 PM">04:30 PM</option>
+<option value="05:00 PM">05:00 PM</option>
+<option value="05:30 PM">05:30 PM</option>
+<option value="06:00 PM">06:00 PM</option>
+<option value="06:30 PM">06:30 PM</option>
+<option value="07:00 PM">07:00 PM</option>
+<option value="07:30 PM">07:30 PM</option>
+<option value="08:00 PM">08:00 PM</option>
+<option value="08:30 PM">08:30 PM</option>
+<option value="09:00 PM">09:00 PM</option>
+<option value="09:30 PM">09:30 PM</option>
+<option value="10:00 PM">10:00 PM</option>
+<option value="10:30 PM">10:30 PM</option>
+<option value="11:00 PM">11:00 PM</option>
+<option value="11:30 PM">11:30 PM</option>
+</select>
+<div class="valid-feedback">
+<i class="fas fa-check"></i>
+</div>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+<div class="form-group">
+<label class="control-label animated fadeInUp" for="validationServer01"> Return Date</label>
+<input id="phone" type="date" name="returnDate" class="form-control animated fadeInUp" required="">
+<div class="valid-feedback">
+<i class="fas fa-check"></i>
+</div>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+<div class="form-group">
+<label class="control-label animated fadeInUp" for="validationServer01">Return Time</label>
+<select name="returntime" id="select1" class="form-control" required>
+<option value="">Choose Time</option>
+<option value="Midnight">Midnight</option>
+<option value="00:30 AM">00:30 AM</option>
+<option value="01:00 AM">01:00 AM</option>
+<option value="01:30 AM">01:30 AM</option>
+<option value="02:00 AM">02:00 AM</option>
+ <option value="02:30 AM">02:30 AM</option>
+<option value="03:00 AM">03:00 AM</option>
+<option value="03:30 AM">03:30 AM</option>
+<option value="04:00 AM">04:00 AM</option>
+<option value="04:30 AM">04:30 AM</option>
+<option value="05:00 AM">05:00 AM</option>
+<option value="05:30 AM">05:30 AM</option>
+<option value="06:00 AM">06:00 AM</option>
+<option value="06:30 AM">06:30 AM</option>
+<option value="07:00 AM">07:00 AM</option>
+<option value="07:30 AM">07:30 AM</option>
+<option value="08:00 AM">08:00 AM</option>
+<option value="08:30 AM">08:30 AM</option>
+<option value="09:00 AM">09:00 AM</option>
+<option value="09:30 AM">09:30 AM</option>
+<option value="10:00 AM">10:00 AM</option>
+<option value="10:30 AM">10:30 AM</option>
+<option value="11:30 AM">11:30 AM</option>
+<option value="Noon">Noon</option>
+<option value="12:30 PM">12:30 PM</option>
+<option value="01:00 PM">01:00 PM</option>
+<option value="01:30 PM">01:30 PM</option>
+<option value="02:00 PM">02:00 PM</option>
+<option value="02:30 PM">02:30 PM</option>
+<option value="03:00 PM">03:00 PM</option>
+<option value="03:30 PM">03:30 PM</option>
+<option value="04:00 PM">04:00 PM</option>
+<option value="04:30 PM">04:30 PM</option>
+<option value="05:00 PM">05:00 PM</option>
+ <option value="05:30 PM">05:30 PM</option>
+<option value="06:00 PM">06:00 PM</option>
+<option value="06:30 PM">06:30 PM</option>
+<option value="07:00 PM">07:00 PM</option>
+<option value="07:30 PM">07:30 PM</option>
+<option value="08:00 PM">08:00 PM</option>
+<option value="08:30 PM">08:30 PM</option>
+<option value="09:00 PM">09:00 PM</option>
+<option value="09:30 PM">09:30 PM</option>
+<option value="10:00 PM">10:00 PM</option>
+<option value="10:30 PM">10:30 PM</option>
+<option value="11:00 PM">11:00 PM</option>
+<option value="11:30 PM">11:30 PM</option>
+</select>
+<div class="valid-feedback">
+<i class="fas fa-check"></i>
+</div>
+</div>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+<label class="control-label animated fadeInUp">Purpose</label>
+<div class="form-group">
+<div class="form-check form-check-inline">
+<input class="form-check-input animated fadeInUp" type="radio" name="purpose" id="inlineRadio1" value="rent" required="">
+<label class="form-check-label animated fadeInUp" for="inlineRadio1">For Rent</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input animated fadeInUp" type="radio" name="purpose" id="inlineRadio2" value="wedding">
+<label class="form-check-label animated fadeInUp" for="inlineRadio2">For Wedding</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input animated fadeInUp" type="radio" name="purpose" id="inlineRadio3" value="airport pick &amp; drop">
+<label class="form-check-label animated fadeInUp" for="inlineRadio3">For Airport Pick &amp; Drop</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input animated fadeInUp" type="radio" name="purpose" id="inlineRadio4" value="events &amp; others">
+<label class="form-check-label animated fadeInUp" for="inlineRadio3">For Events &amp; Others</label>
+</div>
+</div>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+<div class="form-group">
+<label class="control-label animated fadeInUp" for="validationServer01">Cars</label>
+<select id="select2" name="vehicle" class="form-control" required>
+ <option value="">choose your vehicle</option>
+ <option value="COROLLA GLI 2018">COROLLA GLI 2018</option>
+<option value="VIGO CHAMP 2014">VIGO CHAMP 2014</option>
+<option value="CIVIC VTI 2017">CIVIC VTI 2017</option>
+<option value="LAND CRUISER ZX V8 2017">LAND CRUISER ZX V8 2017</option>
+<option value="PRADO TX 2017">PRADO TX 2017</option>
+<option value="HILUX RIVO 2018">HILUX RIVO 2018</option>
+</select>
+<div class="valid-feedback">
+<i class="fas fa-check"></i>
+</div>
+</div>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+<div class="form-group">
+<label class="control-label animated fadeInUp" for="validationServer01">Describe Your Any Other Requirements</label>
+<textarea class="form-control animated fadeInUp" id="textarea" name="requirements" rows="4" maxlength="200" placeholder="Write Your Requirements"></textarea>
+</div>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+<label class="control-label animated fadeInUp" for="validationServer01">Terms and Conditions</label>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+<div class="trems">
+If you want cancel your Booking/Ride you will be inform first on Pakdrives contact detail before One/1 hour otherwise you will be pay half day rent of vehicle.
+</div>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input animated fadeInUp" id="customCheck1" required="">
+<label class="custom-control-label mbr-iconfont animated fadeInUp" for="customCheck1">Please Check On Checkbox If You Agree All Terms And Conditions.
+</label>
+</div>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+<button type="submit" name="submit" class="btn btn-md btn-primary display-4 animated fadeInUp">Book Now</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+	</section>
+</div>
+<!-- Jumbotron -->
+
+<div class="container-fluid" id="sec-about">
+<div class="row jumbotron">
+<div class="col-sm-6">
+	<h3>about <span>us</span></h3>
+	<p>Pak Drives offering you an unique vehicle rental service that helps client to easily search for the rent a car service in all over the major cities across the pakistan. </p>
+	<p>We give you affordable charges to keep your travelling needs absolutely in your budget and our focus on clients satisfaction first. We shall always trying to gives you serve our best services.</p>
+	<p>When you book your car for your holidays, business trip, partys, meetings and occasions, so it is important that you choose the right vehicle for you period of traveling.</p>
+	<p>Any kind of help or problems or any complaints about services feel free contact us.
+Thank you.</p>
+</div>
+<div class="col-sm-6">
+	<div>
+      <img class="d-block w-100" src="images/karachi.png" alt="Third slide">
+    </div>	
+</div>
+</div>
+</div>
+
+<div class="cars" id="sec-fleet">
+	<div class="container">
+		<h1>
+			our<span>fleet</span>
+		</h1>
+		<div class="row">
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 col-12">
+				<div class="layout">
+					<img src="images/toyota.png" alt="COROLLA GLI 2018">
+					<span>COROLLA GLI 2018</span>
+					<h2>PKR.4500/day</h2>
+					<div class="align">
+						<p>Company</p>
+						<p>Toyota</p>
+					</div>
+					<div class="align">
+						<p>Available Models</p>
+						<p>2014-18</p>
+					</div>
+					<div class="align">
+						<p>Color</p>
+						<p>white</p>
+					</div>
+					<div class="align">
+						<p>Transmission</p>
+						<p>Manual/Auto</p>
+					</div>
+					<a href="#" class="btn btn-primary view">BOOK NOW</a>
+				</div>
+			</div>
+			
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 col-12">
+				<div class="layout">
+					<img src="images/vigo (1).png" alt="VIGO CHAMP 2014">
+					<span>VIGO CHAMP 2014</span>
+					<h2>PKR.9000/day</h2>
+					<div class="align">
+						<p>Company</p>
+						<p>Toyota</p>
+					</div>
+					<div class="align">
+						<p>Available Models</p>
+						<p>2013-14</p>
+					</div>
+					<div class="align">
+						<p>Color</p>
+						<p>black</p>
+					</div>
+					<div class="align">
+						<p>Transmission</p>
+						<p>Manual/Auto</p>
+					</div>
+					<a href="#" class="btn btn-primary view">BOOK NOW</a>
+				</div>
+			</div>
+			
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 col-12">
+				<div class="layout">
+					<img src="images/honda (1).png" alt="CIVIC VTI 2017">
+					<span>CIVIC VTI 2017</span>
+					<h2>PKR.8000/day</h2>
+					<div class="align">
+						<p>Company</p>
+						<p>Honda</p>
+					</div>
+					<div class="align">
+						<p>Available Models</p>
+						<p>2016-18</p>
+					</div>
+					<div class="align">
+						<p>Color</p>
+						<p>White</p>
+					</div>
+					<div class="align">
+						<p>Transmission</p>
+						<p>Manual/Auto</p>
+					</div>
+					<a href="#" class="btn btn-primary view">BOOK NOW</a>
+				</div>
+			</div>
+			
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 col-12">
+				<div class="layout">
+					<img src="images/land-cruiser-v8-2017 (1).png" alt="LAND CRUISER ZX V8 2017">
+					<span>LAND CRUISER ZX V8 2017</span>
+					<h2>PKR.25000/day</h2>
+					<div class="align">
+						<p>Company</p>
+						<p>Toyota</p>
+					</div>
+					<div class="align">
+						<p>Available Models</p>
+						<p>2016-17</p>
+					</div>
+					<div class="align">
+						<p>Color</p>
+						<p>White</p>
+					</div>
+					<div class="align">
+						<p>Transmission</p>
+						<p>Manual/Auto</p>
+					</div>
+					<a href="#" class="btn btn-primary view">BOOK NOW</a>
+				</div>
+			</div>
+			
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 col-12">
+				<div class="layout">
+					<img src="images/toyota-prado-TX 2017.png" alt="PRADO TX 2017">
+					<span>PRADO TX 2017</span>
+					<h2>PKR.22000/day</h2>
+					<div class="align">
+						<p>Company</p>
+						<p>Toyota</p>
+					</div>
+					<div class="align">
+						<p>Available Models</p>
+						<p>2017</p>
+					</div>
+					<div class="align">
+						<p>Color</p>
+						<p>black</p>
+					</div>
+					<div class="align">
+						<p>Transmission</p>
+						<p>Manual/Auto</p>
+					</div>
+					<a href="#" class="btn btn-primary view">BOOK NOW</a>
+				</div>
+			</div>
+			
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 col-12">
+				<div class="layout">
+					<img src="images/rivo (1).png" alt="HILUX RIVO 2018">
+					<span>HILUX RIVO 2018</span>
+					<h2>PKR.10000/day</h2>
+					<div class="align">
+						<p>Company</p>
+						<p>Toyota</p>
+					</div>
+					<div class="align">
+						<p>Available Models</p>
+						<p>2016-18</p>
+					</div>
+					<div class="align">
+						<p>Color</p>
+						<p>White</p>
+					</div>
+					<div class="align">
+						<p>Transmission</p>
+						<p>Manual/Auto</p>
+					</div>
+					<a href="#" class="btn btn-primary view">BOOK NOW</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Services -->
+<div class="services" id="sec-services">
+	<section class="features">
+	<div class="container">
+		<h1>Our<span>services</span></h1>
+		<div class="row">
+		<div class="card p-3 col-12 col-md-6 col-lg-4">
+			<div class="card-lay">
+				<div class="card-img pb-3">
+				<span>
+					<i class="far fa-smile"></i>
+				</span>
+					
+				</div>
+				<div class="card-box">
+					<h3 class="card-title py-3 mbr-fonts-style align-center- disply-5">client satisfaction</h3>
+					<p>we are always give client more then what they expect to get.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card p-3 col-12 col-md-6 col-lg-4">
+			<div class="card-lay">
+				<div class="card-img pb-3">
+				<span>
+				<i class="fas fa-car"></i>
+				</span>
+					
+				</div>
+				<div class="card-box">
+					<h3 class="card-title py-3 mbr-fonts-style disply-5">Latest Modal</h3>
+					<p>"Renowned, Reliability, Automatic and Manual we almost have latest modal for our clients."</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card p-3 col-12 col-md-6 col-lg-4">
+			<div class="card-lay">
+				<div class="card-img pb-3">
+				<span>
+					<i class="fas fa-hand-holding-usd"></i>
+				</span>
+					
+				</div>
+				<div class="card-box">
+					<h3 class="card-title py-3 mbr-fonts-style disply-5">Specail Rates</h3>
+					<p>We are give our specail rate for honorable clients as compare to market</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card p-3 col-12 col-md-6 col-lg-4">
+			<div class="card-lay">
+				<div class="card-img pb-3">
+				<span>
+					
+					<i class="fas fa-user"></i>	
+				</span>
+					
+				</div>
+				<div class="card-box">
+					<h3 class="card-title py-3 mbr-fonts-style disply-5">Professional Chauffeurs
+					</h3>
+					<p>Of course, We have professional Chauffeurs/Drivers for our specail clients for all the places of pakistan.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card p-3 col-12 col-md-6 col-lg-4">
+			<div class="card-lay">
+				<div class="card-img pb-3">
+				<span>
+					<i class="far fa-money-bill-alt"></i>
+				</span>
+					
+				</div>
+				<div class="card-box">
+					<h3 class="card-title py-3 mbr-fonts-style align-center- disply-5">Free Bonus Trip</h3>
+					<p>We are give free bonus trip for our specail client. The clients who will have five time use our service in a month. We will give him/her a full day of free bonus trip.
+
+</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card p-3 col-12 col-md-6 col-lg-4">
+			<div class="card-lay">
+				<div class="card-img pb-3">
+				<span>
+					<i class="fab fa-teamspeak">
+						
+					</i>
+				</span>
+					
+				</div>
+				<div class="card-box">
+					<h3 class="card-title py-3 mbr-fonts-style align-center- disply-5">Clients Care</h3>
+					<p>For our serves client by determining requirements, answering inquiries, resovlng problems, fulfiling requests.</p>
+				</div>
+			</div>
+		</div>
+			
+		</div>
+	</div>
+	</section>
+</div>
+<!-- Counter -->
+
+<!-- Contact -->
+
+<div class="contact" id="sec-contact">
+	<section class="section form4" id="form4-a">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="google-map">
+						<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJv0sdZQY-sz4RIwxaVUQv-Zw" allowfullscreen=""></iframe>
+				</div>
+<div class="trem">
+	<div class="detail">
+		<h3 class="text align-left display-7">Trems &amp; Conditions Are Applied On Client.</h3>
+		<span><i class="fas fa-gas-pump"></i></span><p class="">Fuel</p>
+		<span><i class="far fa-clock"></i></span><p class="">Overtime Charges</p>
+		<span><i class="fas fa-ticket-alt"></i></span><p class="">Toll Texes</p>
+		<span><i class="fas fa-home"></i></span><p class="">Cash On Drop</p>
+		<span><i class="fas fa-tachometer-alt"></i></span><p class="">Respect For Speed Limit</p>
+		<span><i class="fas fa-utensils"></i></span><p class="">Respect For Chauffeur/Driver Lunch</p>
+		<span><i class="fas fa-user-shield"></i></span><p class="">Good Behavior With Chauffeurs/Drivers</p>
+<div class="note">
+		<span><b>Note:</b> If you want cancel your Booking/Ride you will be inform first on Pakdrives contact detail before One/1 hour otherwise you will be pay half day rent of vehicle.</span>
+		</div>
+	</div>
+</div>
+</div>
+<div class="col-md-6">
+	<h2 class="pb-3 align-left display-2">
+	Contact Us</h2>
+<div>
+<div class="icon-block pb-3">
+	<h3 class="align-left display-5">
+	Don't hesitate to contact us
+	</h3>
+	</div>
+<div class="icon-contacts pb-3">
+	<p class="text align-left display-7">
+	Phone: +92122815083 +923333198535 <br>
+	Email: pakdrivesinfo@gmail.com</p>
+	</div>
+</div>
+	<div data-form-type="formoid">
+					<div data-form-alert="sdfsdf" hidden="">Thanks for being awesome!
+					We have reeived your message and would like to thank you for writing to us. If your inquiry is urgent, please use the phone number listed below to talk to one of our team. Otherwise, we will reply by email as soon as possible.
+					Talk to you soon,
+					pakdrives</div>
+		<form class="block form" method="post" data-form-title="contact-form" aria-activedescendant="" novalidate>
+ 		<input type="hidden" name="email" data-form-email="true" value="email" data-form-field="Email" class="hidden animated">
+		<div class="row">
+				<div class="col-md-6 multi-horizontal" data-for="name">
+				<label class="control-label" for="validationServer01">Name</label>
+						<input type="text" class="form-control input" name="name" data-form-field="Name" minlength="3" maxlength="30" placeholder="Full Name" required="" id="name-form4-a">
+			<div class="valid-feedback">
+				<i class="fas fa-check"></i>
+				</div>
+			</div>
+			<div class="col-md-6 multi-horizontal" data-for="phone">
+		<label class="control-label" for="validationServer02">Phone Number</label>
+		<input type="tel" class="form-control input" name="phone" data-form-field="Phone" pattern="^\d{11}$" placeholder="0300-0000000" required="" id="phone-form4-a">
+		<div class="valid-feedback">
+			<i class="fas fa-check"></i>
+		</div>
+	</div>
+		<div class="col-md-12" data-for="email">
+			<label class="control-label" for="validationServer03">Email</label>
+		<input type="email" class="form-control input" name="email" data-form-field="Email" title="Invalid input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="xxxx@xxxx.com" required="" id="email-form4-a">
+		<div class="valid-feedback">
+		<i class="fas fa-check"></i>
+		</div>
+		</div>
+				<div class="col-md-12" data-for="message">
+					<label class="control-label" for="validationServer04">Message</label>
+						<textarea class="form-control input" name="message" rows="3" data-form-field="Message" placeholder="Typing..." style="resize:none" id="message-form4-a" required></textarea>
+				<div class="valid-feedback">
+					<i class="fas fa-check"></i>	
+				</div>
+				</div>
+				<div class="input-group-btn col-md-12" style="margin-top: 10px;">
+					<button name="submit" type="submit" class="btn btn-primary btn-form display-4">SEND MESSAGE</button>
+				</div>
+			</div>
+		</form>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- Footer -->
+<footer class="footer font-small blue pt-4">
+<div class="container">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+		<div class="col-12 col-md-3">
+		<div class="media-wrap">
+			<a href="index">
+			<img src="images/logo2.png" alt="pakdrives logo">
+			</a>
+		</div>
+	</div>
+        <!-- Grid column -->
+        <div class="col-12 col-md-3 display-7">
+		<h5 class="pb-3">
+		Address
+		</h5>
+			<p class="text">Malir Cantoment, Near Rengers HQ, Karachi, Pakistan.</p>
+</div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-12 col-md-3 display-7">
+		<h5 class="pb-3">
+		Contacts
+		</h5>
+		<p class="text">
+			Email: <a href="mailto:pakdrivesinfo@gmail.com">pakdrivesinfo@gmail.com</a>
+			<br>
+			Phone &amp; Whatsapp:<br><a href="tel:+923333198535">+92-333-319-853-5</a>
+			<br>
+			<a href="tel:+923122815083">+92-312-281-508-3</a></p>
+</div>          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-12 col-md-3  display-7">
+		<h5 class="pb-3">
+		Links
+		</h5>
+		<p class="text"><a href="index.html">HOME</a>
+		<br>
+		<a href="#sec-about">ABOUT</a>
+		<br>
+		<a href="#sec-fleet">FLEET</a>
+		<br>
+		<a href="#sec-services">SERVICES</a>
+		<br>
+		<a href="#sec-contact">CONTACT</a>
+		</p>
+</div>
+
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-lower">
+	<div class="media-container-row">
+		<div class="col-sm-12">
+		<hr>
+	</div>
+</div>
+<div class="media-container-row white">
+	<div class="col-sm-6 copyright">
+		<p class="text display-7">
+		© Copyright 2018 Pakdrives - All Rights Reserved
+		</p>
+</div>
+<div class="col-md-6">
+	<div class="social-list align-right">
+		<div class="soc-item">
+		<a href="https://www.instagram.com/pakdrives/" target="_blank">
+		<span class="iconfont iconfont-social"><i class="fab fa-instagram"></i></span>
+		</a>
+</div>
+<div class="soc-item">
+	<a href="https://www.facebook.com/PakDrives" target="_blank">
+	<span class="iconfont iconfont-social"><i class="fab fa-facebook"></i></span>
+	</a>
+</div>
+<div class="soc-item">
+		<a href="https://www.youtube.com/channel/UCZ0jRk7WWbUSfAujWJ8QFMQ" target="_blank">
+		<span class="iconfont iconfont-social"><i class="fab fa-youtube"></i></span>
+		</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <!-- Copyright -->
+</div>
+  </footer>
+  <!-- Footer -->
+</body>
+</html>

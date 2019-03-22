@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+background{
+	background-repeat: no-repeat;
+	display: block;
+}
+.rz-login .signin {
+    color: #212121;
+    border: none;
+    text-align: center;
+    background: transparent;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -305px;
+    margin-left: -215px;
+    padding: 0;
+    max-width: 430px;
+    width: 100%;
+}
+.slideInDown {
+    animation-name: slideInDown;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.signin {
+    color: #212121;
+    
+    text-align: center;
+  
+}
